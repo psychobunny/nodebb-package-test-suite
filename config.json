@@ -1,3 +1,12 @@
 {
-	"api": "https://packages.nodebb.org/api/v1/plugins"
+	"api": "https://packages.nodebb.org/api/v1/plugins",
+    "url": "doesntmatter.com",
+    "secret": "doesntmatter.com",
+    "database": "redis",
+    "redis": {
+        "host": "127.0.0.1",
+        "port": "6379",
+        "password": "",
+        "database": "5"
+    }
 }

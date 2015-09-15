@@ -1,7 +1,8 @@
 var nconf = require('nconf'),
 	winston = require('winston'),
 	url = require('url'),
-	path = require('path');
+	path = require('path'),
+	async = require('async');
 
 winston.remove(winston.transports.Console);
 winston.add(winston.transports.Console, {
@@ -13,4 +14,10 @@ nconf
 	.env()
 	.file(path.join(__dirname, 'config.json'));
 
-require('./lib/repos').pull();
+
+async.waterfall([
+	async.apply(require('./lib/setup').nodebb),
+	async.apply(require('./lib/repos').pull)
+], function(err) {
+	winston.log('All done');
+});
