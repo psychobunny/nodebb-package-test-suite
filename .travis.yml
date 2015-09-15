@@ -1,0 +1,12 @@
+services:
+    - redis-server
+before_install:
+    - "sudo apt-get update"
+    - npm i
+    - npm start
+language: node_js
+node_js:
+    - "0.11"
+branches:
+    only:
+        - master
