@@ -1,3 +1,5 @@
+"use strict";
+
 var nconf = require('nconf'),
 	winston = require('winston'),
 	url = require('url'),
