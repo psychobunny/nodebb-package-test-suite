@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			server: {
-				files: ['lib/**/*.js', 'index.js'],
+				files: ['./lib/**/*.js', 'index.js'],
 				tasks: ['execute'],
 				options: {
 					livereload: false,
