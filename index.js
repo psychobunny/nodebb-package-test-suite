@@ -20,6 +20,7 @@ nconf
 async.waterfall([
 	async.apply(require('./lib/repos').pull),
 	async.apply(require('./lib/setup').nodebb),
+	async.apply(require('./lib/test').plugins),
 ], function(err) {
 	winston.log('All done');
 });
