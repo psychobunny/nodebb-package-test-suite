@@ -13,4 +13,4 @@ nconf
 	.env()
 	.file(path.join(__dirname, 'config.json'));
 
-console.log('hello world');
+require('./lib/repos').pull();
