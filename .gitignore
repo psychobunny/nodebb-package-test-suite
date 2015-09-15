@@ -76,3 +76,5 @@ $RECYCLE.BIN/
 
 *.sublime-project
 *.sublime-workspace
+
+/nodebb
