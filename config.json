@@ -1,7 +1,7 @@
 {
 	"api": "https://packages.nodebb.org/api/v1/plugins",
-    "url": "doesntmatter.com",
-    "secret": "doesntmatter.com",
+    "url": "http://127.0.0.1:4567",
+    "secret": "doesntmatter",
     "database": "redis",
     "redis": {
         "host": "127.0.0.1",
